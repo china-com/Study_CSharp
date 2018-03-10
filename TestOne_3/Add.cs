@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//3、从键盘输入两个整数，输出和；如：输入a=123，b=456,求a+b=？。
 namespace TestOne_3
 {
     class Add
