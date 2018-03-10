@@ -10,7 +10,7 @@ using System.Threading.Tasks;
  * 日期：2018/3/8
  */
 
-//1、编程求1+2+3+......+100的和。
+//1、编程求1+2+3+.....+100的和。
 namespace TestOne_1
 {
     class Sum
