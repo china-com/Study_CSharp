@@ -11,7 +11,7 @@ using System.Threading.Tasks;
  */
 
 //1、编程求1+2+3+......+100的和。
-namespace TestOne
+namespace TestOne_1
 {
     class Sum
     {
@@ -24,7 +24,7 @@ namespace TestOne
                 sum += a;
             }
             Console.WriteLine("1+2+3+.....+100的和是：" + sum);
-            Console.ReadKey();
+            Console.ReadKey();//等待用户从键盘输入，以便显示计算答案。
         }
     }
 }
