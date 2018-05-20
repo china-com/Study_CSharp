@@ -19,7 +19,7 @@ namespace TestSix
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string conntxt = "server=localhost;User Id=root;password=296200336;Database=StudyDemo";
+            string conntxt = "server=localhost;User Id=root;password=admin;Database=StudyDemo";
             MySqlConnection conn = new MySqlConnection(conntxt);
             conn.Open();
             string cmdtxt = "select xh,pw from student where xh='" + textBox1.Text + "'and pw='" + textBox2.Text + "'";

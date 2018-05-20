@@ -17,7 +17,7 @@ namespace TestSix
             InitializeComponent();
         }
 
-        string conntxt = "server=localhost;User Id=root;password=296200336;Database=StudyDemo";
+        string conntxt = "server=localhost;User Id=root;password=admin;Database=StudyDemo";
 
         private void showstudent()
         {

@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatDemo", "FormatDemo\FormatDemo.csproj", "{701467F6-F07D-49FA-954A-E3E6BCEFB8CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormatDemo", "FormatDemo\FormatDemo.csproj", "{701467F6-F07D-49FA-954A-E3E6BCEFB8CC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormDemo_1", "FormDemo_1\FormDemo_1.csproj", "{F287A1B0-4F38-41D7-BEAF-5568A8B72C11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OracleTest", "OracleTest\OracleTest.csproj", "{402B9A1A-C2F0-4BE9-AAE0-C9C7137D8DFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F287A1B0-4F38-41D7-BEAF-5568A8B72C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F287A1B0-4F38-41D7-BEAF-5568A8B72C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F287A1B0-4F38-41D7-BEAF-5568A8B72C11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{402B9A1A-C2F0-4BE9-AAE0-C9C7137D8DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{402B9A1A-C2F0-4BE9-AAE0-C9C7137D8DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{402B9A1A-C2F0-4BE9-AAE0-C9C7137D8DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{402B9A1A-C2F0-4BE9-AAE0-C9C7137D8DFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
