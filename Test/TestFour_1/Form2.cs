@@ -73,5 +73,10 @@ namespace TestFour_2
             this.Hide();
             new Form3().Show();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
