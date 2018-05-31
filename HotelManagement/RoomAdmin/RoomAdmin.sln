@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpSalary", "EmpSalary\EmpSalary.csproj", "{0A509B4A-981E-44AE-ADAD-6C925A33D8D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomAdmin", "RoomAdmin\RoomAdmin.csproj", "{F82FF371-B6C1-4347-AEEC-5933C065E5F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0A509B4A-981E-44AE-ADAD-6C925A33D8D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0A509B4A-981E-44AE-ADAD-6C925A33D8D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0A509B4A-981E-44AE-ADAD-6C925A33D8D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0A509B4A-981E-44AE-ADAD-6C925A33D8D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F82FF371-B6C1-4347-AEEC-5933C065E5F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F82FF371-B6C1-4347-AEEC-5933C065E5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F82FF371-B6C1-4347-AEEC-5933C065E5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F82FF371-B6C1-4347-AEEC-5933C065E5F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E9ACF3CC-289E-4113-BC33-44B0CF86F127}
+		SolutionGuid = {4E064CF5-218B-4664-855F-CCC1BFCBCF7E}
 	EndGlobalSection
 EndGlobal
