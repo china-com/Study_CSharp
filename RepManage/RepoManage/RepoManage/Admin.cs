@@ -29,6 +29,8 @@ namespace RepoManage
             panel4.Visible = false;
             panel5.Visible = false;
             panel6.Visible = false;
+            this.panel7.Visible = false;
+            this.panel8.Visible = false;
         }
 
         private void 修改管理员信息ToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -43,7 +45,7 @@ namespace RepoManage
 
         private void 修改管理员信息ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://localhost:6869/");
+            System.Diagnostics.Process.Start("http://localhost:3601/Default.aspx");
             //this.panel1.Visible = true;
         }
 
@@ -119,7 +121,8 @@ namespace RepoManage
             this.panel4.Visible = false;
             this.panel5.Visible = false;
             this.panel6.Visible = false;
-
+            this.panel7.Visible = false;
+            this.panel8.Visible = false;
         }
 
         private void 添加采购员ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -130,9 +133,10 @@ namespace RepoManage
             this.panel4.Visible = false;
             this.panel5.Visible = false;
             this.panel6.Visible = false;
-
-            this.panel2.BringToFront();
-            panel1.Location = panel2.Location;
+            this.panel7.Visible = false;
+            this.panel8.Visible = false;
+            //this.panel2.BringToFront();
+            //panel1.Location = panel2.Location;
             //label7.Text = "添加采购员账户";
         }
 
@@ -270,7 +274,8 @@ namespace RepoManage
             this.panel4.Visible = true;
             this.panel5.Visible = false;
             this.panel6.Visible = false;
-
+            this.panel7.Visible = false;
+            this.panel8.Visible = false;
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -359,7 +364,8 @@ namespace RepoManage
             this.panel4.Visible = true;
             this.panel5.Visible = true;
             this.panel6.Visible = false;
-
+            this.panel7.Visible = false;
+            this.panel8.Visible = false;
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -396,8 +402,11 @@ namespace RepoManage
             this.panel1.Visible = true;
             this.panel2.Visible = true;
             this.panel3.Visible = true;
-            this.panel4.Visible = false;
-            this.panel5.Visible = false;
+            this.panel4.Visible = true;
+            this.panel5.Visible = true;
+            this.panel6.Visible = true;
+            this.panel7.Visible = false;
+            this.panel8.Visible = false;
             //label7.Text = "添加提货员账户";
         }
 
@@ -429,14 +438,170 @@ namespace RepoManage
                 {
                     gender = radioButton5.Text;
                 }
-                string sqlStr1 = "insert into picker values ('" + textBox5.Text + "','" + textBox6.Text + "','" + gender + "','" + textBox7.Text + "','" + textBox8.Text + "')";
+                string sqlStr1 = "insert into picker values ('" + textBox14.Text + "','" + textBox15.Text + "','" + gender + "','" + textBox16.Text + "','" + textBox17.Text + "')";
                 cmd.CommandText = sqlStr1;
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("提货员增加成功！");
             }
             catch (Exception)
             {
-                MessageBox.Show("该采购员已存在！");
+                MessageBox.Show("该提货员已存在！");
+            }
+            finally
+            {
+                cmd.Dispose();
+                conn.Close();
+            }
+        }
+
+        private void 删除提货员ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.panel1.Visible = true;
+            this.panel2.Visible = true;
+            this.panel3.Visible = true;
+            this.panel4.Visible = true;
+            this.panel5.Visible = true;
+            this.panel6.Visible = true;
+            this.panel7.Visible = true;
+            this.panel8.Visible = false;
+        }
+
+        private void 修改提货员信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.panel1.Visible = true;
+            this.panel2.Visible = true;
+            this.panel3.Visible = true;
+            this.panel4.Visible = true;
+            this.panel5.Visible = true;
+            this.panel6.Visible = true;
+            this.panel7.Visible = true;
+            this.panel8.Visible = true;
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            Admin ad = new Admin();
+            this.Hide();
+            ad.Show();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sqlStr = "select * from picker where PickerID='" + textBox18.Text.Trim() + "'";
+                conn = new OracleConnection(ConnectionString);
+                conn.Open();
+                cmd = new OracleCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = sqlStr;
+                OracleDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    string sqlStr1 = "delete from picker where PickerID='" + textBox18.Text.Trim() + "'";
+                    cmd.CommandText = sqlStr1;
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("删除成功！");
+                }
+                else
+                {
+                    MessageBox.Show("输入的提货员ID有误！");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("系统繁忙！");
+            }
+            finally
+            {
+                cmd.Dispose();
+                conn.Close();
+            }
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            textBox19.Text = "";
+            textBox20.Text = "";
+            textBox21.Text = "";
+            textBox22.Text = "";
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            Admin ad = new Admin();
+            this.Hide();
+            ad.Show();
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sqlStr = "select * from picker where PickerID='" + textBox19.Text.Trim() + "'";
+                DataSet ds = new DataSet();
+                conn = new OracleConnection(ConnectionString);
+                conn.Open();
+                cmd = new OracleCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = sqlStr;
+                OracleDataAdapter adapter = new OracleDataAdapter();
+                adapter.SelectCommand = cmd;
+                adapter.Fill(ds);
+                OracleDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    textBox20.Text = (string)ds.Tables[0].Rows[0][1].ToString().Trim();
+                    if ((string)ds.Tables[0].Rows[0][2].ToString().Trim() == radioButton7.Text)
+                    {
+                        radioButton7.Checked = true;
+                        radioButton8.Checked = false;
+                    }
+                    else
+                    {
+                        radioButton8.Checked = true;
+                        radioButton7.Checked = false;
+                    }
+                    textBox21.Text = (string)ds.Tables[0].Rows[0][3].ToString().Trim();
+                    textBox22.Text = (string)ds.Tables[0].Rows[0][4].ToString().Trim();
+                }
+                else
+                {
+                    MessageBox.Show("输入的采购员ID有误！");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("系统繁忙！");
+            }
+            finally
+            {
+                cmd.Dispose();
+                conn.Close();
+            }
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string gender = "男";
+                if (radioButton7.Checked == true)
+                {
+                    gender = radioButton7.Text;
+                }
+                string sqlStr = "update picker set Name='" + textBox20.Text + "',Gender='" + gender + "',Phone='" + textBox21.Text + "',Address='" + textBox22.Text + "'" + " where PickerID='" + textBox19.Text.Trim() + "'";
+                conn = new OracleConnection(ConnectionString);
+                conn.Open();
+                cmd = new OracleCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = sqlStr;
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("信息修改成功！");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("系统繁忙！");
             }
             finally
             {

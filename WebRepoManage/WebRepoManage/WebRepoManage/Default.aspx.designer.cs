@@ -7,7 +7,7 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace RoomAdmin {
+namespace WebRepoManage {
     
     
     public partial class Default {
