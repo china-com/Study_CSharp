@@ -12,6 +12,9 @@
             font-size: xx-large;
             margin-left: 280px;
         }
+        .auto-style2 {
+            font-family: 微软雅黑;
+        }
     </style>
 </head>
 <body>
@@ -34,20 +37,20 @@
             <div style="width: 414px; height: 251px; margin-left: 328px; background-color: #99CCFF">
                 <br />
                 <br />
-&nbsp;&nbsp;&nbsp; 用户名：<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp; <span class="auto-style2">用户名：</span><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                 <br />
                 <br />
-&nbsp;&nbsp;&nbsp; 密&nbsp;&nbsp; 码：<asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;<span class="auto-style2"> 密&nbsp;&nbsp; 码：</span><asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
                 <br />
                 <br />
-&nbsp;&nbsp;&nbsp; 角&nbsp;&nbsp; 色：<asp:RadioButton ID="RadioButton1" runat="server" Checked="True" Text="管理员" GroupName="gender" />
+&nbsp;&nbsp;&nbsp; <span class="auto-style2">角&nbsp;&nbsp; 色：</span><asp:RadioButton ID="RadioButton1" runat="server" Checked="True" Text="管理员" GroupName="gender" />
                 <asp:RadioButton ID="RadioButton2" runat="server" Text="员工" GroupName="gender" />
                 <br />
                 <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="登录" />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="登录" style="font-family: 微软雅黑" />
 &nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button2" runat="server" Text="取消" OnClick="Button2_Click" />
+                <asp:Button ID="Button2" runat="server" Text="取消" OnClick="Button2_Click" style="font-family: 微软雅黑" />
             </div>
             <br />
             <br />

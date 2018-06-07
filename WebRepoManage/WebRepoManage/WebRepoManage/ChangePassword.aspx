@@ -10,6 +10,9 @@
         .auto-style1 {
             font-size: x-large;
         }
+        .auto-style2 {
+            font-family: 微软雅黑;
+        }
     </style>
 </head>
 <body>
@@ -27,25 +30,25 @@
             <br />
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="Label1" runat="server" Text="欢迎"></asp:Label>
+            <asp:Label ID="Label1" runat="server" style="font-size: medium; font-family: 微软雅黑" Text="欢迎"></asp:Label>
             <br />
             <br />
             <div style="height: 213px; width: 911px; margin-left: 255px">
                 <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 新密码：<asp:TextBox ID="TextBox1" runat="server" TextMode="Password"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style2">新密码：</span><asp:TextBox ID="TextBox1" runat="server" TextMode="Password"></asp:TextBox>
                 <br />
                 <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 确认密码：<asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style2">确认密码：</span><asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
                 <br />
                 <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="确定" />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" style="font-family: 微软雅黑" Text="确定" />
 &nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="取消" />
+                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" style="font-family: 微软雅黑" Text="取消" />
             </div>
             <br />
             <br />

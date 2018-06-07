@@ -31,6 +31,9 @@ namespace RepoManage
             panel6.Visible = false;
             this.panel7.Visible = false;
             this.panel8.Visible = false;
+            panel9.Visible = false;
+            panel10.Visible = false;
+            panel11.Visible = false;
         }
 
         private void 修改管理员信息ToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -123,6 +126,9 @@ namespace RepoManage
             this.panel6.Visible = false;
             this.panel7.Visible = false;
             this.panel8.Visible = false;
+            panel9.Visible = false;
+            panel10.Visible = false;
+            panel11.Visible = false;
         }
 
         private void 添加采购员ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -135,6 +141,9 @@ namespace RepoManage
             this.panel6.Visible = false;
             this.panel7.Visible = false;
             this.panel8.Visible = false;
+            panel9.Visible = false;
+            panel10.Visible = false;
+            panel11.Visible = false;
             //this.panel2.BringToFront();
             //panel1.Location = panel2.Location;
             //label7.Text = "添加采购员账户";
@@ -276,6 +285,9 @@ namespace RepoManage
             this.panel6.Visible = false;
             this.panel7.Visible = false;
             this.panel8.Visible = false;
+            panel9.Visible = false;
+            panel10.Visible = false;
+            panel11.Visible = false;
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -366,6 +378,9 @@ namespace RepoManage
             this.panel6.Visible = false;
             this.panel7.Visible = false;
             this.panel8.Visible = false;
+            panel9.Visible = false;
+            panel10.Visible = false;
+            panel11.Visible = false;
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -407,6 +422,9 @@ namespace RepoManage
             this.panel6.Visible = true;
             this.panel7.Visible = false;
             this.panel8.Visible = false;
+            panel9.Visible = true;
+            panel10.Visible = false;
+            panel11.Visible = false;
             //label7.Text = "添加提货员账户";
         }
 
@@ -464,6 +482,9 @@ namespace RepoManage
             this.panel6.Visible = true;
             this.panel7.Visible = true;
             this.panel8.Visible = false;
+            panel9.Visible = false;
+            panel10.Visible = false;
+            panel11.Visible = false;
         }
 
         private void 修改提货员信息ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -476,6 +497,9 @@ namespace RepoManage
             this.panel6.Visible = true;
             this.panel7.Visible = true;
             this.panel8.Visible = true;
+            panel9.Visible = false;
+            panel10.Visible = false;
+            panel11.Visible = false;
         }
 
         private void button17_Click(object sender, EventArgs e)
@@ -606,6 +630,125 @@ namespace RepoManage
             finally
             {
                 cmd.Dispose();
+                conn.Close();
+            }
+        }
+
+        private void 关于ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://localhost:3601/About.aspx");
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sqlStr = "select username from empuser";
+                DataSet ds = new DataSet();
+                conn = new OracleConnection(ConnectionString);
+                conn.Open();
+                OracleDataAdapter adapter = new OracleDataAdapter(sqlStr, conn);
+                adapter.Fill(ds, "table");
+                dataGridView1.DataSource = ds;
+                dataGridView1.DataMember = "table";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("系统繁忙！");
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        private void 查询员工信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.panel1.Visible = true;
+            this.panel2.Visible = true;
+            this.panel3.Visible = true;
+            this.panel4.Visible = true;
+            this.panel5.Visible = true;
+            this.panel6.Visible = true;
+            this.panel7.Visible = true;
+            this.panel8.Visible = true;
+            panel9.Visible = true;
+            panel10.Visible = false;
+            panel11.Visible = false;
+        }
+
+        private void 查询采购员信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.panel1.Visible = true;
+            this.panel2.Visible = true;
+            this.panel3.Visible = true;
+            this.panel4.Visible = true;
+            this.panel5.Visible = true;
+            this.panel6.Visible = true;
+            this.panel7.Visible = true;
+            this.panel8.Visible = true;
+            panel9.Visible = true;
+            panel10.Visible = true;
+            panel11.Visible = false;
+        }
+
+        private void 查询提货员信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.panel1.Visible = true;
+            this.panel2.Visible = true;
+            this.panel3.Visible = true;
+            this.panel4.Visible = true;
+            this.panel5.Visible = true;
+            this.panel6.Visible = true;
+            this.panel7.Visible = true;
+            this.panel8.Visible = true;
+            panel9.Visible = true;
+            panel10.Visible = true;
+            panel11.Visible = true;
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sqlStr = "select * from buyer";
+                DataSet ds = new DataSet();
+                conn = new OracleConnection(ConnectionString);
+                conn.Open();
+                OracleDataAdapter adapter = new OracleDataAdapter(sqlStr, conn);
+                adapter.Fill(ds, "table");
+                dataGridView2.DataSource = ds;
+                dataGridView2.DataMember = "table";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("系统繁忙！");
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sqlStr = "select * from picker";
+                DataSet ds = new DataSet();
+                conn = new OracleConnection(ConnectionString);
+                conn.Open();
+                OracleDataAdapter adapter = new OracleDataAdapter(sqlStr, conn);
+                adapter.Fill(ds, "table");
+                dataGridView3.DataSource = ds;
+                dataGridView3.DataMember = "table";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("系统繁忙！");
+            }
+            finally
+            {
                 conn.Close();
             }
         }
