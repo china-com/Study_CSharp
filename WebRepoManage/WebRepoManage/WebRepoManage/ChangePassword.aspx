@@ -17,7 +17,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div style="background-color: #66CCFF">
             <br />
             <div style="width: 211px; margin-left: 754px">
                 <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">注销登录</asp:LinkButton>

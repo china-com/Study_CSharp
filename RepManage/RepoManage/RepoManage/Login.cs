@@ -92,5 +92,15 @@ namespace RepoManage
                 conn.Close();
             }
         }
+
+        private void button1_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
