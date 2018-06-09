@@ -134,6 +134,11 @@ namespace RepoManage
             panel7.Visible = false;
             panel8.Visible = false;
             panel9.Visible = false;
+            panel10.Visible = false;
+            panel11.Visible = false;
+            panel12.Visible = false;
+            panel13.Visible = false;
+            panel14.Visible = false;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -157,6 +162,11 @@ namespace RepoManage
             panel7.Visible = false;
             panel8.Visible = false;
             panel9.Visible = false;
+            panel10.Visible = false;
+            panel11.Visible = false;
+            panel12.Visible = false;
+            panel13.Visible = false;
+            panel14.Visible = false;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -284,6 +294,11 @@ namespace RepoManage
             panel7.Visible = false;
             panel8.Visible = false;
             panel9.Visible = false;
+            panel10.Visible = false;
+            panel11.Visible = false;
+            panel12.Visible = false;
+            panel13.Visible = false;
+            panel14.Visible = false;
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -320,6 +335,11 @@ namespace RepoManage
             panel7.Visible = false;
             panel8.Visible = false;
             panel9.Visible = false;
+            panel10.Visible = false;
+            panel11.Visible = false;
+            panel12.Visible = false;
+            panel13.Visible = false;
+            panel14.Visible = false;
         }
 
         private void dateTimePicker3_ValueChanged(object sender, EventArgs e)
@@ -381,6 +401,11 @@ namespace RepoManage
             panel7.Visible = false;
             panel8.Visible = false;
             panel9.Visible = false;
+            panel10.Visible = false;
+            panel11.Visible = false;
+            panel12.Visible = false;
+            panel13.Visible = false;
+            panel14.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -478,6 +503,11 @@ namespace RepoManage
             panel7.Visible = false;
             panel8.Visible = false;
             panel9.Visible = false;
+            panel10.Visible = false;
+            panel11.Visible = false;
+            panel12.Visible = false;
+            panel13.Visible = false;
+            panel14.Visible = false;
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
@@ -530,6 +560,11 @@ namespace RepoManage
             panel7.Visible = true;
             panel8.Visible = false;
             panel9.Visible = false;
+            panel10.Visible = false;
+            panel11.Visible = false;
+            panel12.Visible = false;
+            panel13.Visible = false;
+            panel14.Visible = false;
         }
 
         private void button18_Click(object sender, EventArgs e)
@@ -566,6 +601,11 @@ namespace RepoManage
             panel7.Visible = true;
             panel8.Visible = true;
             panel9.Visible = false;
+            panel10.Visible = false;
+            panel11.Visible = false;
+            panel12.Visible = false;
+            panel13.Visible = false;
+            panel14.Visible = false;
         }
 
         private void panel9_Paint(object sender, PaintEventArgs e)
@@ -604,7 +644,7 @@ namespace RepoManage
         {
             try
             {
-                string sqlStr = "insert into intable values ('" + textBox24.Text + "','" + textBox26.Text + "','" + dateTimePicker5.Text + "','" + textBox27.Text + "','" + textBox28.Text + "','" + textBox29.Text + "')";
+                string sqlStr = "insert into intable values ('" + textBox24.Text + "','" + textBox26.Text + "','" + dateTimePicker5.Text + "'," + textBox27.Text + ",'" + textBox28.Text + "','" + textBox29.Text + "')";
                 conn = new OracleConnection(ConnectionString);
                 conn.Open();
                 cmd = new OracleCommand();
@@ -615,7 +655,7 @@ namespace RepoManage
             }
             catch (Exception)
             {
-                MessageBox.Show("系统繁忙！");
+                MessageBox.Show("请检查输入的数值是否正确！");
             }
             finally
             {
@@ -635,6 +675,334 @@ namespace RepoManage
             panel7.Visible = true;
             panel8.Visible = true;
             panel9.Visible = true;
+            panel10.Visible = false;
+            panel11.Visible = false;
+            panel12.Visible = false;
+            panel13.Visible = false;
+            panel14.Visible = false;
+        }
+
+        private void 入库信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            panel2.Visible = true;
+            panel3.Visible = true;
+            panel4.Visible = true;
+            panel5.Visible = true;
+            panel6.Visible = true;
+            panel7.Visible = true;
+            panel8.Visible = true;
+            panel9.Visible = true;
+            panel10.Visible = true;
+            panel11.Visible = false;
+            panel12.Visible = false;
+            panel13.Visible = false;
+            panel14.Visible = false;
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sqlStr = "select * from intable";
+                DataSet ds = new DataSet();
+                conn = new OracleConnection(ConnectionString);
+                conn.Open();
+                OracleDataAdapter adapter = new OracleDataAdapter(sqlStr, conn);
+                adapter.Fill(ds, "table");
+                dataGridView3.DataSource = ds;
+                dataGridView3.DataMember = "table";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("系统繁忙！");
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        private void 出入操作ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            panel2.Visible = true;
+            panel3.Visible = true;
+            panel4.Visible = true;
+            panel5.Visible = true;
+            panel6.Visible = true;
+            panel7.Visible = true;
+            panel8.Visible = true;
+            panel9.Visible = true;
+            panel10.Visible = true;
+            panel11.Visible = true;
+            panel12.Visible = false;
+            panel13.Visible = false;
+            panel14.Visible = false;
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            textBox30.Text = "";
+            textBox31.Text = "";
+            textBox32.Text = "";
+            textBox33.Text = "";
+            textBox34.Text = "";
+            dateTimePicker6.Value = DateTime.Now;
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            Employee ep = new Employee();
+            this.Hide();
+            ep.Show();
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sqlStr = "insert into outtable values ('" + textBox30.Text + "','" + textBox31.Text + "','" + dateTimePicker6.Text + "'," + textBox32.Text + ",'" + textBox33.Text + "','" + textBox34.Text + "')";
+                conn = new OracleConnection(ConnectionString);
+                conn.Open();
+                cmd = new OracleCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = sqlStr;
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("商品出库成功！");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("请检查输入的数值是否正确！");
+            }
+            finally
+            {
+                cmd.Dispose();
+                conn.Close();
+            }
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sqlStr = "select * from outtable";
+                DataSet ds = new DataSet();
+                conn = new OracleConnection(ConnectionString);
+                conn.Open();
+                OracleDataAdapter adapter = new OracleDataAdapter(sqlStr, conn);
+                adapter.Fill(ds, "table");
+                dataGridView4.DataSource = ds;
+                dataGridView4.DataMember = "table";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("系统繁忙！");
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        private void 出库信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            panel2.Visible = true;
+            panel3.Visible = true;
+            panel4.Visible = true;
+            panel5.Visible = true;
+            panel6.Visible = true;
+            panel7.Visible = true;
+            panel8.Visible = true;
+            panel9.Visible = true;
+            panel10.Visible = true;
+            panel11.Visible = true;
+            panel12.Visible = true;
+            panel13.Visible = false;
+            panel14.Visible = false;
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sqlStr = "select * from repo where RepoID='" + textBox35.Text.Trim() + "'";
+                DataSet ds = new DataSet();
+                conn = new OracleConnection(ConnectionString);
+                conn.Open();
+                cmd = new OracleCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = sqlStr;
+                OracleDataAdapter adapter = new OracleDataAdapter();
+                adapter.SelectCommand = cmd;
+                adapter.Fill(ds);
+                OracleDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    textBox36.Text = (string)ds.Tables[0].Rows[0][1].ToString().Trim();
+                    textBox37.Text = (string)ds.Tables[0].Rows[0][3].ToString().Trim();
+                    textBox38.Text = (string)ds.Tables[0].Rows[0][2].ToString().Trim();
+                }
+                else
+                {
+                    MessageBox.Show("输入的仓库编号有误！");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("系统繁忙！");
+            }
+            finally
+            {
+                cmd.Dispose();
+                conn.Close();
+            }
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            textBox35.Text = "";
+            textBox36.Text = "";
+            textBox37.Text = "";
+            textBox38.Text = "";
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            Employee ep = new Employee();
+            this.Hide();
+            ep.Show();
+        }
+
+        private void 仓库信息管理ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            panel2.Visible = true;
+            panel3.Visible = true;
+            panel4.Visible = true;
+            panel5.Visible = true;
+            panel6.Visible = true;
+            panel7.Visible = true;
+            panel8.Visible = true;
+            panel9.Visible = true;
+            panel10.Visible = true;
+            panel11.Visible = true;
+            panel12.Visible = true;
+            panel13.Visible = true;
+            panel14.Visible = false;
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sqlStr = "select * from repo where RepoID='" + textBox35.Text.Trim() + "'";
+                DataSet ds = new DataSet();
+                conn = new OracleConnection(ConnectionString);
+                conn.Open();
+                cmd = new OracleCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = sqlStr;
+                OracleDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    try
+                    {
+                        string sqlStr1 = "update repo set RepoName='" + textBox36.Text +"',RepoAddress='" + textBox38.Text + "',RepoSize ="+textBox37.Text;
+                        conn = new OracleConnection(ConnectionString);
+                        conn.Open();
+                        cmd = new OracleCommand();
+                        cmd.Connection = conn;
+                        cmd.CommandText = sqlStr1;
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("该仓库信息修改成功！");
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("输入的数据有误!");
+                    }
+                    finally
+                    {
+                        cmd.Dispose();
+                        conn.Close();
+                    }
+                    
+                }
+                else
+                {
+                    try
+                    {
+                        string sqlStr2 = "insert into repo values ('" + textBox35.Text + "','" + textBox36.Text + "','" + textBox38.Text + "'," + textBox37.Text + ")";
+                        conn = new OracleConnection(ConnectionString);
+                        conn.Open();
+                        cmd = new OracleCommand();
+                        cmd.Connection = conn;
+                        cmd.CommandText = sqlStr2;
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("仓库信息添加成功！");
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("请检查输入的数值是否正确！");
+                    }
+                    finally
+                    {
+                        cmd.Dispose();
+                        conn.Close();
+                    }
+                }
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("系统繁忙！");
+            }
+            finally
+            {
+                cmd.Dispose();
+                conn.Close();
+            }
+        }
+
+        private void 仓库信息查询ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            panel2.Visible = true;
+            panel3.Visible = true;
+            panel4.Visible = true;
+            panel5.Visible = true;
+            panel6.Visible = true;
+            panel7.Visible = true;
+            panel8.Visible = true;
+            panel9.Visible = true;
+            panel10.Visible = true;
+            panel11.Visible = true;
+            panel12.Visible = true;
+            panel13.Visible = true;
+            panel14.Visible = true;
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sqlStr = "select * from repo";
+                DataSet ds = new DataSet();
+                conn = new OracleConnection(ConnectionString);
+                conn.Open();
+                OracleDataAdapter adapter = new OracleDataAdapter(sqlStr, conn);
+                adapter.Fill(ds, "table");
+                dataGridView5.DataSource = ds;
+                dataGridView5.DataMember = "table";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("系统繁忙！");
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
     }
 }

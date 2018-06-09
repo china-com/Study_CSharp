@@ -34,14 +34,17 @@
             this.管理员ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.添加管理员信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.删除管理员ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.查询员工信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.采购员ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.添加采购员ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.删除采购员ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.修改采购员信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.查询采购员信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.提货员ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.添加提货员ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.删除提货员ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.修改提货员信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.查询提货员信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.取消登录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.注销登录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,6 +57,18 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.button25 = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.label37 = new System.Windows.Forms.Label();
+            this.button24 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label36 = new System.Windows.Forms.Label();
+            this.button23 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label35 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
@@ -140,21 +155,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label35 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button23 = new System.Windows.Forms.Button();
-            this.查询员工信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.查询采购员信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label36 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button24 = new System.Windows.Forms.Button();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.查询提货员信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label37 = new System.Windows.Forms.Label();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.button25 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -165,11 +165,11 @@
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -217,16 +217,23 @@
             // 添加管理员信息ToolStripMenuItem
             // 
             this.添加管理员信息ToolStripMenuItem.Name = "添加管理员信息ToolStripMenuItem";
-            this.添加管理员信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.添加管理员信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.添加管理员信息ToolStripMenuItem.Text = "添加员工";
             this.添加管理员信息ToolStripMenuItem.Click += new System.EventHandler(this.添加管理员信息ToolStripMenuItem_Click);
             // 
             // 删除管理员ToolStripMenuItem
             // 
             this.删除管理员ToolStripMenuItem.Name = "删除管理员ToolStripMenuItem";
-            this.删除管理员ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.删除管理员ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.删除管理员ToolStripMenuItem.Text = "删除员工";
             this.删除管理员ToolStripMenuItem.Click += new System.EventHandler(this.删除管理员ToolStripMenuItem_Click);
+            // 
+            // 查询员工信息ToolStripMenuItem
+            // 
+            this.查询员工信息ToolStripMenuItem.Name = "查询员工信息ToolStripMenuItem";
+            this.查询员工信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.查询员工信息ToolStripMenuItem.Text = "查询员工信息";
+            this.查询员工信息ToolStripMenuItem.Click += new System.EventHandler(this.查询员工信息ToolStripMenuItem_Click);
             // 
             // 采购员ToolStripMenuItem
             // 
@@ -242,7 +249,7 @@
             // 添加采购员ToolStripMenuItem
             // 
             this.添加采购员ToolStripMenuItem.Name = "添加采购员ToolStripMenuItem";
-            this.添加采购员ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.添加采购员ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.添加采购员ToolStripMenuItem.Tag = "buyer";
             this.添加采购员ToolStripMenuItem.Text = "添加采购员";
             this.添加采购员ToolStripMenuItem.Click += new System.EventHandler(this.添加采购员ToolStripMenuItem_Click);
@@ -250,7 +257,7 @@
             // 删除采购员ToolStripMenuItem
             // 
             this.删除采购员ToolStripMenuItem.Name = "删除采购员ToolStripMenuItem";
-            this.删除采购员ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.删除采购员ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.删除采购员ToolStripMenuItem.Tag = "buyer";
             this.删除采购员ToolStripMenuItem.Text = "删除采购员";
             this.删除采购员ToolStripMenuItem.Click += new System.EventHandler(this.删除采购员ToolStripMenuItem_Click);
@@ -258,10 +265,17 @@
             // 修改采购员信息ToolStripMenuItem
             // 
             this.修改采购员信息ToolStripMenuItem.Name = "修改采购员信息ToolStripMenuItem";
-            this.修改采购员信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.修改采购员信息ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.修改采购员信息ToolStripMenuItem.Tag = "buyer";
             this.修改采购员信息ToolStripMenuItem.Text = "修改采购员信息";
             this.修改采购员信息ToolStripMenuItem.Click += new System.EventHandler(this.修改采购员信息ToolStripMenuItem_Click);
+            // 
+            // 查询采购员信息ToolStripMenuItem
+            // 
+            this.查询采购员信息ToolStripMenuItem.Name = "查询采购员信息ToolStripMenuItem";
+            this.查询采购员信息ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.查询采购员信息ToolStripMenuItem.Text = "查询采购员信息";
+            this.查询采购员信息ToolStripMenuItem.Click += new System.EventHandler(this.查询采购员信息ToolStripMenuItem_Click);
             // 
             // 提货员ToolStripMenuItem
             // 
@@ -277,7 +291,7 @@
             // 添加提货员ToolStripMenuItem
             // 
             this.添加提货员ToolStripMenuItem.Name = "添加提货员ToolStripMenuItem";
-            this.添加提货员ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.添加提货员ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.添加提货员ToolStripMenuItem.Tag = "picker";
             this.添加提货员ToolStripMenuItem.Text = "添加提货员";
             this.添加提货员ToolStripMenuItem.Click += new System.EventHandler(this.添加提货员ToolStripMenuItem_Click);
@@ -285,7 +299,7 @@
             // 删除提货员ToolStripMenuItem
             // 
             this.删除提货员ToolStripMenuItem.Name = "删除提货员ToolStripMenuItem";
-            this.删除提货员ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.删除提货员ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.删除提货员ToolStripMenuItem.Tag = "picker";
             this.删除提货员ToolStripMenuItem.Text = "删除提货员";
             this.删除提货员ToolStripMenuItem.Click += new System.EventHandler(this.删除提货员ToolStripMenuItem_Click);
@@ -293,10 +307,17 @@
             // 修改提货员信息ToolStripMenuItem
             // 
             this.修改提货员信息ToolStripMenuItem.Name = "修改提货员信息ToolStripMenuItem";
-            this.修改提货员信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.修改提货员信息ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.修改提货员信息ToolStripMenuItem.Tag = "picker";
             this.修改提货员信息ToolStripMenuItem.Text = "修改提货员信息";
             this.修改提货员信息ToolStripMenuItem.Click += new System.EventHandler(this.修改提货员信息ToolStripMenuItem_Click);
+            // 
+            // 查询提货员信息ToolStripMenuItem
+            // 
+            this.查询提货员信息ToolStripMenuItem.Name = "查询提货员信息ToolStripMenuItem";
+            this.查询提货员信息ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.查询提货员信息ToolStripMenuItem.Text = "查询提货员信息";
+            this.查询提货员信息ToolStripMenuItem.Click += new System.EventHandler(this.查询提货员信息ToolStripMenuItem_Click);
             // 
             // 取消登录ToolStripMenuItem
             // 
@@ -310,7 +331,7 @@
             // 注销登录ToolStripMenuItem
             // 
             this.注销登录ToolStripMenuItem.Name = "注销登录ToolStripMenuItem";
-            this.注销登录ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.注销登录ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
             this.注销登录ToolStripMenuItem.Text = "注销登录";
             this.注销登录ToolStripMenuItem.Click += new System.EventHandler(this.注销登录ToolStripMenuItem_Click);
             // 
@@ -486,6 +507,131 @@
             this.panel8.Size = new System.Drawing.Size(892, 666);
             this.panel8.TabIndex = 11;
             this.panel8.Visible = false;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.panel10);
+            this.panel9.Controls.Add(this.button23);
+            this.panel9.Controls.Add(this.dataGridView1);
+            this.panel9.Controls.Add(this.label35);
+            this.panel9.Location = new System.Drawing.Point(4, 3);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(879, 652);
+            this.panel9.TabIndex = 46;
+            this.panel9.Visible = false;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.panel11);
+            this.panel10.Controls.Add(this.button24);
+            this.panel10.Controls.Add(this.dataGridView2);
+            this.panel10.Controls.Add(this.label36);
+            this.panel10.Location = new System.Drawing.Point(3, 3);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(876, 664);
+            this.panel10.TabIndex = 3;
+            this.panel10.Visible = false;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.button25);
+            this.panel11.Controls.Add(this.dataGridView3);
+            this.panel11.Controls.Add(this.label37);
+            this.panel11.Location = new System.Drawing.Point(3, 3);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(873, 657);
+            this.panel11.TabIndex = 3;
+            this.panel11.Visible = false;
+            // 
+            // button25
+            // 
+            this.button25.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button25.Location = new System.Drawing.Point(403, 517);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(101, 46);
+            this.button25.TabIndex = 2;
+            this.button25.Text = "查询";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(65, 108);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowTemplate.Height = 27;
+            this.dataGridView3.Size = new System.Drawing.Size(748, 370);
+            this.dataGridView3.TabIndex = 1;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label37.Location = new System.Drawing.Point(304, 42);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(211, 36);
+            this.label37.TabIndex = 0;
+            this.label37.Text = "查询提货员信息";
+            // 
+            // button24
+            // 
+            this.button24.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button24.Location = new System.Drawing.Point(410, 495);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(101, 45);
+            this.button24.TabIndex = 2;
+            this.button24.Text = "查询";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(68, 121);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 27;
+            this.dataGridView2.Size = new System.Drawing.Size(748, 357);
+            this.dataGridView2.TabIndex = 1;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label36.Location = new System.Drawing.Point(341, 66);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(211, 36);
+            this.label36.TabIndex = 0;
+            this.label36.Text = "查询采购员信息";
+            // 
+            // button23
+            // 
+            this.button23.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button23.Location = new System.Drawing.Point(357, 419);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(89, 42);
+            this.button23.TabIndex = 2;
+            this.button23.Text = "查询";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(244, 172);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 27;
+            this.dataGridView1.Size = new System.Drawing.Size(299, 197);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label35.Location = new System.Drawing.Point(300, 91);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(183, 36);
+            this.label35.TabIndex = 0;
+            this.label35.Text = "查询员工信息";
             // 
             // label29
             // 
@@ -1318,152 +1464,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "添加员工账户";
             // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.panel10);
-            this.panel9.Controls.Add(this.button23);
-            this.panel9.Controls.Add(this.dataGridView1);
-            this.panel9.Controls.Add(this.label35);
-            this.panel9.Location = new System.Drawing.Point(4, 3);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(879, 652);
-            this.panel9.TabIndex = 46;
-            this.panel9.Visible = false;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label35.Location = new System.Drawing.Point(300, 50);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(183, 36);
-            this.label35.TabIndex = 0;
-            this.label35.Text = "查询员工信息";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(109, 114);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(658, 401);
-            this.dataGridView1.TabIndex = 1;
-            // 
-            // button23
-            // 
-            this.button23.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button23.Location = new System.Drawing.Point(394, 549);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(89, 42);
-            this.button23.TabIndex = 2;
-            this.button23.Text = "查询";
-            this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
-            // 
-            // 查询员工信息ToolStripMenuItem
-            // 
-            this.查询员工信息ToolStripMenuItem.Name = "查询员工信息ToolStripMenuItem";
-            this.查询员工信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.查询员工信息ToolStripMenuItem.Text = "查询员工信息";
-            this.查询员工信息ToolStripMenuItem.Click += new System.EventHandler(this.查询员工信息ToolStripMenuItem_Click);
-            // 
-            // 查询采购员信息ToolStripMenuItem
-            // 
-            this.查询采购员信息ToolStripMenuItem.Name = "查询采购员信息ToolStripMenuItem";
-            this.查询采购员信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.查询采购员信息ToolStripMenuItem.Text = "查询采购员信息";
-            this.查询采购员信息ToolStripMenuItem.Click += new System.EventHandler(this.查询采购员信息ToolStripMenuItem_Click);
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.panel11);
-            this.panel10.Controls.Add(this.button24);
-            this.panel10.Controls.Add(this.dataGridView2);
-            this.panel10.Controls.Add(this.label36);
-            this.panel10.Location = new System.Drawing.Point(3, 3);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(876, 664);
-            this.panel10.TabIndex = 3;
-            this.panel10.Visible = false;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label36.Location = new System.Drawing.Point(341, 66);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(211, 36);
-            this.label36.TabIndex = 0;
-            this.label36.Text = "查询采购员信息";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(68, 121);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 27;
-            this.dataGridView2.Size = new System.Drawing.Size(763, 346);
-            this.dataGridView2.TabIndex = 1;
-            // 
-            // button24
-            // 
-            this.button24.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button24.Location = new System.Drawing.Point(410, 495);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(101, 45);
-            this.button24.TabIndex = 2;
-            this.button24.Text = "查询";
-            this.button24.UseVisualStyleBackColor = true;
-            this.button24.Click += new System.EventHandler(this.button24_Click);
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.button25);
-            this.panel11.Controls.Add(this.dataGridView3);
-            this.panel11.Controls.Add(this.label37);
-            this.panel11.Location = new System.Drawing.Point(4, 3);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(859, 597);
-            this.panel11.TabIndex = 3;
-            this.panel11.Visible = false;
-            // 
-            // 查询提货员信息ToolStripMenuItem
-            // 
-            this.查询提货员信息ToolStripMenuItem.Name = "查询提货员信息ToolStripMenuItem";
-            this.查询提货员信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.查询提货员信息ToolStripMenuItem.Text = "查询提货员信息";
-            this.查询提货员信息ToolStripMenuItem.Click += new System.EventHandler(this.查询提货员信息ToolStripMenuItem_Click);
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label37.Location = new System.Drawing.Point(304, 42);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(211, 36);
-            this.label37.TabIndex = 0;
-            this.label37.Text = "查询提货员信息";
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(53, 108);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowTemplate.Height = 27;
-            this.dataGridView3.Size = new System.Drawing.Size(769, 370);
-            this.dataGridView3.TabIndex = 1;
-            // 
-            // button25
-            // 
-            this.button25.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button25.Location = new System.Drawing.Point(403, 517);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(101, 46);
-            this.button25.TabIndex = 2;
-            this.button25.Text = "查询";
-            this.button25.UseVisualStyleBackColor = true;
-            this.button25.Click += new System.EventHandler(this.button25_Click);
-            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -1495,13 +1495,13 @@
             this.panel8.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

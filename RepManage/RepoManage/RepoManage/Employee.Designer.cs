@@ -48,12 +48,6 @@
             this.出库信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.仓库信息管理ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.仓库信息查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.仓库警示管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.产品数量报警ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.仓库报表打印ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.导出货物信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.导出入库信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.导出出库信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.注销ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.注销登录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,6 +61,27 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
+            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.button22 = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.label46 = new System.Windows.Forms.Label();
             this.button21 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
@@ -171,6 +186,28 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label54 = new System.Windows.Forms.Label();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.button26 = new System.Windows.Forms.Button();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.button27 = new System.Windows.Forms.Button();
+            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.textBox38 = new System.Windows.Forms.TextBox();
+            this.label59 = new System.Windows.Forms.Label();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.label60 = new System.Windows.Forms.Label();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.button31 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -181,8 +218,16 @@
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.panel13.SuspendLayout();
+            this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -193,8 +238,6 @@
             this.客户管理ToolStripMenuItem,
             this.货物信息管理ToolStripMenuItem,
             this.仓库管理ToolStripMenuItem,
-            this.仓库警示管理ToolStripMenuItem,
-            this.仓库报表打印ToolStripMenuItem,
             this.注销ToolStripMenuItem,
             this.帮助ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -312,81 +355,44 @@
             // 入库操作ToolStripMenuItem
             // 
             this.入库操作ToolStripMenuItem.Name = "入库操作ToolStripMenuItem";
-            this.入库操作ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.入库操作ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.入库操作ToolStripMenuItem.Text = "入库操作";
             this.入库操作ToolStripMenuItem.Click += new System.EventHandler(this.入库操作ToolStripMenuItem_Click);
             // 
             // 入库信息ToolStripMenuItem
             // 
             this.入库信息ToolStripMenuItem.Name = "入库信息ToolStripMenuItem";
-            this.入库信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.入库信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.入库信息ToolStripMenuItem.Text = "入库信息";
+            this.入库信息ToolStripMenuItem.Click += new System.EventHandler(this.入库信息ToolStripMenuItem_Click);
             // 
             // 出入操作ToolStripMenuItem
             // 
             this.出入操作ToolStripMenuItem.Name = "出入操作ToolStripMenuItem";
-            this.出入操作ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.出入操作ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.出入操作ToolStripMenuItem.Text = "出库操作";
+            this.出入操作ToolStripMenuItem.Click += new System.EventHandler(this.出入操作ToolStripMenuItem_Click);
             // 
             // 出库信息ToolStripMenuItem
             // 
             this.出库信息ToolStripMenuItem.Name = "出库信息ToolStripMenuItem";
             this.出库信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.出库信息ToolStripMenuItem.Text = "出库信息";
+            this.出库信息ToolStripMenuItem.Click += new System.EventHandler(this.出库信息ToolStripMenuItem_Click);
             // 
             // 仓库信息管理ToolStripMenuItem1
             // 
             this.仓库信息管理ToolStripMenuItem1.Name = "仓库信息管理ToolStripMenuItem1";
             this.仓库信息管理ToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
             this.仓库信息管理ToolStripMenuItem1.Text = "仓库信息管理";
+            this.仓库信息管理ToolStripMenuItem1.Click += new System.EventHandler(this.仓库信息管理ToolStripMenuItem1_Click);
             // 
             // 仓库信息查询ToolStripMenuItem
             // 
             this.仓库信息查询ToolStripMenuItem.Name = "仓库信息查询ToolStripMenuItem";
             this.仓库信息查询ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.仓库信息查询ToolStripMenuItem.Text = "仓库信息查询";
-            // 
-            // 仓库警示管理ToolStripMenuItem
-            // 
-            this.仓库警示管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.产品数量报警ToolStripMenuItem});
-            this.仓库警示管理ToolStripMenuItem.Name = "仓库警示管理ToolStripMenuItem";
-            this.仓库警示管理ToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
-            this.仓库警示管理ToolStripMenuItem.Text = "仓库警示管理";
-            // 
-            // 产品数量报警ToolStripMenuItem
-            // 
-            this.产品数量报警ToolStripMenuItem.Name = "产品数量报警ToolStripMenuItem";
-            this.产品数量报警ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
-            this.产品数量报警ToolStripMenuItem.Text = "产品数量报警";
-            // 
-            // 仓库报表打印ToolStripMenuItem
-            // 
-            this.仓库报表打印ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.导出货物信息ToolStripMenuItem,
-            this.导出入库信息ToolStripMenuItem,
-            this.导出出库信息ToolStripMenuItem});
-            this.仓库报表打印ToolStripMenuItem.Name = "仓库报表打印ToolStripMenuItem";
-            this.仓库报表打印ToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
-            this.仓库报表打印ToolStripMenuItem.Text = "报表导出";
-            // 
-            // 导出货物信息ToolStripMenuItem
-            // 
-            this.导出货物信息ToolStripMenuItem.Name = "导出货物信息ToolStripMenuItem";
-            this.导出货物信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
-            this.导出货物信息ToolStripMenuItem.Text = "导出货物信息";
-            // 
-            // 导出入库信息ToolStripMenuItem
-            // 
-            this.导出入库信息ToolStripMenuItem.Name = "导出入库信息ToolStripMenuItem";
-            this.导出入库信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
-            this.导出入库信息ToolStripMenuItem.Text = "导出入库信息";
-            // 
-            // 导出出库信息ToolStripMenuItem
-            // 
-            this.导出出库信息ToolStripMenuItem.Name = "导出出库信息ToolStripMenuItem";
-            this.导出出库信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
-            this.导出出库信息ToolStripMenuItem.Text = "导出出库信息";
+            this.仓库信息查询ToolStripMenuItem.Click += new System.EventHandler(this.仓库信息查询ToolStripMenuItem_Click);
             // 
             // 注销ToolStripMenuItem
             // 
@@ -581,6 +587,7 @@
             // 
             // panel9
             // 
+            this.panel9.Controls.Add(this.panel10);
             this.panel9.Controls.Add(this.button21);
             this.panel9.Controls.Add(this.button20);
             this.panel9.Controls.Add(this.button19);
@@ -597,12 +604,224 @@
             this.panel9.Controls.Add(this.label40);
             this.panel9.Controls.Add(this.label39);
             this.panel9.Controls.Add(this.textBox24);
-            this.panel9.Location = new System.Drawing.Point(3, 3);
+            this.panel9.Location = new System.Drawing.Point(3, 0);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(875, 638);
             this.panel9.TabIndex = 3;
             this.panel9.Visible = false;
             this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.panel11);
+            this.panel10.Controls.Add(this.button22);
+            this.panel10.Controls.Add(this.dataGridView3);
+            this.panel10.Controls.Add(this.label46);
+            this.panel10.Location = new System.Drawing.Point(3, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(868, 631);
+            this.panel10.TabIndex = 16;
+            this.panel10.Visible = false;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.panel12);
+            this.panel11.Controls.Add(this.button25);
+            this.panel11.Controls.Add(this.button24);
+            this.panel11.Controls.Add(this.button23);
+            this.panel11.Controls.Add(this.dateTimePicker6);
+            this.panel11.Controls.Add(this.textBox34);
+            this.panel11.Controls.Add(this.textBox33);
+            this.panel11.Controls.Add(this.textBox32);
+            this.panel11.Controls.Add(this.textBox31);
+            this.panel11.Controls.Add(this.textBox30);
+            this.panel11.Controls.Add(this.label53);
+            this.panel11.Controls.Add(this.label52);
+            this.panel11.Controls.Add(this.label51);
+            this.panel11.Controls.Add(this.label50);
+            this.panel11.Controls.Add(this.label49);
+            this.panel11.Controls.Add(this.label48);
+            this.panel11.Controls.Add(this.label47);
+            this.panel11.Location = new System.Drawing.Point(4, 3);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(862, 623);
+            this.panel11.TabIndex = 3;
+            this.panel11.Visible = false;
+            // 
+            // button25
+            // 
+            this.button25.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button25.Location = new System.Drawing.Point(540, 403);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(90, 41);
+            this.button25.TabIndex = 15;
+            this.button25.Text = "重置";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
+            // 
+            // button24
+            // 
+            this.button24.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button24.Location = new System.Drawing.Point(369, 403);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(90, 41);
+            this.button24.TabIndex = 14;
+            this.button24.Text = "取消";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
+            // 
+            // button23
+            // 
+            this.button23.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button23.Location = new System.Drawing.Point(201, 403);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(90, 41);
+            this.button23.TabIndex = 13;
+            this.button23.Text = "确定";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // dateTimePicker6
+            // 
+            this.dateTimePicker6.Location = new System.Drawing.Point(189, 218);
+            this.dateTimePicker6.Name = "dateTimePicker6";
+            this.dateTimePicker6.Size = new System.Drawing.Size(160, 25);
+            this.dateTimePicker6.TabIndex = 12;
+            // 
+            // textBox34
+            // 
+            this.textBox34.Location = new System.Drawing.Point(588, 311);
+            this.textBox34.Name = "textBox34";
+            this.textBox34.Size = new System.Drawing.Size(150, 25);
+            this.textBox34.TabIndex = 11;
+            // 
+            // textBox33
+            // 
+            this.textBox33.Location = new System.Drawing.Point(189, 316);
+            this.textBox33.Name = "textBox33";
+            this.textBox33.Size = new System.Drawing.Size(160, 25);
+            this.textBox33.TabIndex = 10;
+            // 
+            // textBox32
+            // 
+            this.textBox32.Location = new System.Drawing.Point(588, 224);
+            this.textBox32.Name = "textBox32";
+            this.textBox32.Size = new System.Drawing.Size(150, 25);
+            this.textBox32.TabIndex = 9;
+            // 
+            // textBox31
+            // 
+            this.textBox31.Location = new System.Drawing.Point(588, 137);
+            this.textBox31.Name = "textBox31";
+            this.textBox31.Size = new System.Drawing.Size(150, 25);
+            this.textBox31.TabIndex = 8;
+            // 
+            // textBox30
+            // 
+            this.textBox30.Location = new System.Drawing.Point(189, 132);
+            this.textBox30.Name = "textBox30";
+            this.textBox30.Size = new System.Drawing.Size(160, 25);
+            this.textBox30.TabIndex = 7;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label53.Location = new System.Drawing.Point(71, 316);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(112, 27);
+            this.label53.TabIndex = 6;
+            this.label53.Text = "仓库编号：";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label52.Location = new System.Drawing.Point(421, 311);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(159, 27);
+            this.label52.TabIndex = 5;
+            this.label52.Text = "操作员（员工)：";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label51.Location = new System.Drawing.Point(472, 226);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(112, 27);
+            this.label51.TabIndex = 4;
+            this.label51.Text = "出库数量：";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label50.Location = new System.Drawing.Point(71, 220);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(112, 27);
+            this.label50.TabIndex = 3;
+            this.label50.Text = "出库日期：";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label49.Location = new System.Drawing.Point(450, 138);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(132, 27);
+            this.label49.TabIndex = 2;
+            this.label49.Text = "提货员编号：";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label48.Location = new System.Drawing.Point(71, 132);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(112, 27);
+            this.label48.TabIndex = 1;
+            this.label48.Text = "货物编号：";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label47.Location = new System.Drawing.Point(324, 38);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(183, 36);
+            this.label47.TabIndex = 0;
+            this.label47.Text = "商品出库操作";
+            // 
+            // button22
+            // 
+            this.button22.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button22.Location = new System.Drawing.Point(362, 521);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(85, 41);
+            this.button22.TabIndex = 2;
+            this.button22.Text = "查询";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(75, 122);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowTemplate.Height = 27;
+            this.dataGridView3.Size = new System.Drawing.Size(746, 360);
+            this.dataGridView3.TabIndex = 1;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label46.Location = new System.Drawing.Point(312, 58);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(183, 36);
+            this.label46.TabIndex = 0;
+            this.label46.Text = "入库信息查询";
             // 
             // button21
             // 
@@ -653,7 +872,7 @@
             // 
             // textBox28
             // 
-            this.textBox28.Location = new System.Drawing.Point(211, 276);
+            this.textBox28.Location = new System.Drawing.Point(211, 271);
             this.textBox28.Name = "textBox28";
             this.textBox28.Size = new System.Drawing.Size(167, 25);
             this.textBox28.TabIndex = 10;
@@ -672,11 +891,11 @@
             // 
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label44.Location = new System.Drawing.Point(395, 274);
+            this.label44.Location = new System.Drawing.Point(435, 269);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(212, 27);
+            this.label44.Size = new System.Drawing.Size(172, 27);
             this.label44.TabIndex = 8;
-            this.label44.Text = "操作员（员工）编号：";
+            this.label44.Text = "操作员（员工）：";
             // 
             // textBox27
             // 
@@ -729,9 +948,9 @@
             this.label40.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label40.Location = new System.Drawing.Point(93, 126);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(112, 27);
+            this.label40.Size = new System.Drawing.Size(97, 27);
             this.label40.TabIndex = 2;
-            this.label40.Text = "货物编号：";
+            this.label40.Text = "货物编号:";
             this.label40.Click += new System.EventHandler(this.label40_Click);
             // 
             // label39
@@ -1571,6 +1790,233 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.panel13);
+            this.panel12.Controls.Add(this.button26);
+            this.panel12.Controls.Add(this.dataGridView4);
+            this.panel12.Controls.Add(this.label54);
+            this.panel12.Location = new System.Drawing.Point(3, 4);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(855, 616);
+            this.panel12.TabIndex = 16;
+            this.panel12.Visible = false;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label54.Location = new System.Drawing.Point(307, 46);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(183, 36);
+            this.label54.TabIndex = 0;
+            this.label54.Text = "出库信息查询";
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(109, 124);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.RowTemplate.Height = 27;
+            this.dataGridView4.Size = new System.Drawing.Size(625, 286);
+            this.dataGridView4.TabIndex = 1;
+            // 
+            // button26
+            // 
+            this.button26.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button26.Location = new System.Drawing.Point(347, 446);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(98, 41);
+            this.button26.TabIndex = 2;
+            this.button26.Text = "查询";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.panel14);
+            this.panel13.Controls.Add(this.button30);
+            this.panel13.Controls.Add(this.button29);
+            this.panel13.Controls.Add(this.button28);
+            this.panel13.Controls.Add(this.textBox38);
+            this.panel13.Controls.Add(this.label59);
+            this.panel13.Controls.Add(this.textBox37);
+            this.panel13.Controls.Add(this.label58);
+            this.panel13.Controls.Add(this.button27);
+            this.panel13.Controls.Add(this.textBox36);
+            this.panel13.Controls.Add(this.label57);
+            this.panel13.Controls.Add(this.textBox35);
+            this.panel13.Controls.Add(this.label56);
+            this.panel13.Controls.Add(this.label55);
+            this.panel13.Location = new System.Drawing.Point(4, 4);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(848, 609);
+            this.panel13.TabIndex = 3;
+            this.panel13.Visible = false;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label55.Location = new System.Drawing.Point(307, 61);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(183, 36);
+            this.label55.TabIndex = 0;
+            this.label55.Text = "仓库信息管理";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label56.Location = new System.Drawing.Point(122, 140);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(112, 27);
+            this.label56.TabIndex = 1;
+            this.label56.Text = "仓库编号：";
+            // 
+            // textBox35
+            // 
+            this.textBox35.Location = new System.Drawing.Point(235, 142);
+            this.textBox35.Name = "textBox35";
+            this.textBox35.Size = new System.Drawing.Size(149, 25);
+            this.textBox35.TabIndex = 2;
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label57.Location = new System.Drawing.Point(122, 215);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(112, 27);
+            this.label57.TabIndex = 3;
+            this.label57.Text = "仓库名称：";
+            // 
+            // textBox36
+            // 
+            this.textBox36.Location = new System.Drawing.Point(235, 215);
+            this.textBox36.Name = "textBox36";
+            this.textBox36.Size = new System.Drawing.Size(149, 25);
+            this.textBox36.TabIndex = 4;
+            // 
+            // button27
+            // 
+            this.button27.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button27.Location = new System.Drawing.Point(447, 134);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(85, 39);
+            this.button27.TabIndex = 5;
+            this.button27.Text = "查询";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
+            // 
+            // textBox37
+            // 
+            this.textBox37.Location = new System.Drawing.Point(559, 219);
+            this.textBox37.Name = "textBox37";
+            this.textBox37.Size = new System.Drawing.Size(93, 25);
+            this.textBox37.TabIndex = 7;
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label58.Location = new System.Drawing.Point(122, 292);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(112, 27);
+            this.label58.TabIndex = 6;
+            this.label58.Text = "仓库地址：";
+            // 
+            // textBox38
+            // 
+            this.textBox38.Location = new System.Drawing.Point(238, 292);
+            this.textBox38.Name = "textBox38";
+            this.textBox38.Size = new System.Drawing.Size(414, 25);
+            this.textBox38.TabIndex = 9;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label59.Location = new System.Drawing.Point(442, 219);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(97, 27);
+            this.label59.TabIndex = 8;
+            this.label59.Text = "仓库大小:";
+            // 
+            // button28
+            // 
+            this.button28.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button28.Location = new System.Drawing.Point(211, 394);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(85, 39);
+            this.button28.TabIndex = 10;
+            this.button28.Text = "确定";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
+            // 
+            // button29
+            // 
+            this.button29.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button29.Location = new System.Drawing.Point(390, 394);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(85, 39);
+            this.button29.TabIndex = 11;
+            this.button29.Text = "取消";
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
+            // 
+            // button30
+            // 
+            this.button30.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button30.Location = new System.Drawing.Point(545, 395);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(85, 39);
+            this.button30.TabIndex = 12;
+            this.button30.Text = "重置";
+            this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.button31);
+            this.panel14.Controls.Add(this.dataGridView5);
+            this.panel14.Controls.Add(this.label60);
+            this.panel14.Location = new System.Drawing.Point(4, 3);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(841, 600);
+            this.panel14.TabIndex = 13;
+            this.panel14.Visible = false;
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label60.Location = new System.Drawing.Point(315, 52);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(183, 36);
+            this.label60.TabIndex = 0;
+            this.label60.Text = "仓库信息管理";
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Location = new System.Drawing.Point(103, 134);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.RowTemplate.Height = 27;
+            this.dataGridView5.Size = new System.Drawing.Size(641, 293);
+            this.dataGridView5.TabIndex = 1;
+            // 
+            // button31
+            // 
+            this.button31.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button31.Location = new System.Drawing.Point(386, 469);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(100, 41);
+            this.button31.TabIndex = 2;
+            this.button31.Text = "查询";
+            this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -1603,8 +2049,21 @@
             this.panel8.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1622,12 +2081,6 @@
         private System.Windows.Forms.ToolStripMenuItem 仓库管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 入库操作ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 出入操作ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 仓库警示管理ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 产品数量报警ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 仓库报表打印ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 导出货物信息ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 导出入库信息ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 导出出库信息ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 帮助ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
@@ -1755,5 +2208,48 @@
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.ToolStripMenuItem 入库信息ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 出库信息ToolStripMenuItem;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.DateTimePicker dateTimePicker6;
+        private System.Windows.Forms.TextBox textBox34;
+        private System.Windows.Forms.TextBox textBox33;
+        private System.Windows.Forms.TextBox textBox32;
+        private System.Windows.Forms.TextBox textBox31;
+        private System.Windows.Forms.TextBox textBox30;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.TextBox textBox36;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.TextBox textBox35;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.TextBox textBox38;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.TextBox textBox37;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Button button31;
+        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.Label label60;
     }
 }
