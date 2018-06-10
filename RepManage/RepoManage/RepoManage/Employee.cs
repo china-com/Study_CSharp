@@ -472,7 +472,7 @@ namespace RepoManage
         {
             try
             {
-                string sqlStr = "update cargo set Name='" + textBox12.Text +"',RepoID='"+textBox13.Text +"',StartTime='" + dateTimePicker1.Text + "',Factory='" + textBox14.Text + "',BuyerID='" + textBox16.Text + "',BuyerID='" + dateTimePicker2.Text + "', Price=" + textBox15.Text + "' where ConID='" + textBox6.Text.Trim() + "'";
+                string sqlStr = "update cargo set Name='" + textBox12.Text +"',RepoID='"+textBox13.Text +"',StartTime='" + dateTimePicker1.Text + "',Factory='" + textBox14.Text + "',BuyerID='" + textBox16.Text + "',Price=" + textBox15.Text + ",InTime='" + dateTimePicker2.Text + "' where CargoID='" + textBox11.Text.Trim() + "'";
                 conn = new OracleConnection(ConnectionString);
                 conn.Open();
                 cmd = new OracleCommand();
