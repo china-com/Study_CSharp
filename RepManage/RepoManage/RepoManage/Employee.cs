@@ -1004,5 +1004,10 @@ namespace RepoManage
                 conn.Close();
             }
         }
+
+        private void label60_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
