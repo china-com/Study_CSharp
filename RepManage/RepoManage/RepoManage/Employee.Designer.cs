@@ -270,35 +270,35 @@
             this.删除客户信息ToolStripMenuItem,
             this.查询客户信息ToolStripMenuItem});
             this.客户管理ToolStripMenuItem.Name = "客户管理ToolStripMenuItem";
-            this.客户管理ToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
-            this.客户管理ToolStripMenuItem.Text = "客户管理";
+            this.客户管理ToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
+            this.客户管理ToolStripMenuItem.Text = "供应商管理";
             // 
             // 添加客户信息ToolStripMenuItem
             // 
             this.添加客户信息ToolStripMenuItem.Name = "添加客户信息ToolStripMenuItem";
-            this.添加客户信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
-            this.添加客户信息ToolStripMenuItem.Text = "添加客户信息";
+            this.添加客户信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.添加客户信息ToolStripMenuItem.Text = "添加供应商信息";
             this.添加客户信息ToolStripMenuItem.Click += new System.EventHandler(this.添加客户信息ToolStripMenuItem_Click);
             // 
             // 修改用户信息ToolStripMenuItem
             // 
             this.修改用户信息ToolStripMenuItem.Name = "修改用户信息ToolStripMenuItem";
-            this.修改用户信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
-            this.修改用户信息ToolStripMenuItem.Text = "修改客户信息";
+            this.修改用户信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.修改用户信息ToolStripMenuItem.Text = "修改供应商信息";
             this.修改用户信息ToolStripMenuItem.Click += new System.EventHandler(this.修改用户信息ToolStripMenuItem_Click);
             // 
             // 删除客户信息ToolStripMenuItem
             // 
             this.删除客户信息ToolStripMenuItem.Name = "删除客户信息ToolStripMenuItem";
-            this.删除客户信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
-            this.删除客户信息ToolStripMenuItem.Text = "删除客户信息";
+            this.删除客户信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.删除客户信息ToolStripMenuItem.Text = "删除供应商信息";
             this.删除客户信息ToolStripMenuItem.Click += new System.EventHandler(this.删除客户信息ToolStripMenuItem_Click);
             // 
             // 查询客户信息ToolStripMenuItem
             // 
             this.查询客户信息ToolStripMenuItem.Name = "查询客户信息ToolStripMenuItem";
-            this.查询客户信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
-            this.查询客户信息ToolStripMenuItem.Text = "查询客户信息";
+            this.查询客户信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.查询客户信息ToolStripMenuItem.Text = "查询供应商信息";
             this.查询客户信息ToolStripMenuItem.Click += new System.EventHandler(this.查询客户信息ToolStripMenuItem_Click);
             // 
             // 货物信息管理ToolStripMenuItem
@@ -356,42 +356,42 @@
             // 入库操作ToolStripMenuItem
             // 
             this.入库操作ToolStripMenuItem.Name = "入库操作ToolStripMenuItem";
-            this.入库操作ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.入库操作ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.入库操作ToolStripMenuItem.Text = "入库操作";
             this.入库操作ToolStripMenuItem.Click += new System.EventHandler(this.入库操作ToolStripMenuItem_Click);
             // 
             // 入库信息ToolStripMenuItem
             // 
             this.入库信息ToolStripMenuItem.Name = "入库信息ToolStripMenuItem";
-            this.入库信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.入库信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.入库信息ToolStripMenuItem.Text = "入库信息";
             this.入库信息ToolStripMenuItem.Click += new System.EventHandler(this.入库信息ToolStripMenuItem_Click);
             // 
             // 出入操作ToolStripMenuItem
             // 
             this.出入操作ToolStripMenuItem.Name = "出入操作ToolStripMenuItem";
-            this.出入操作ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.出入操作ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.出入操作ToolStripMenuItem.Text = "出库操作";
             this.出入操作ToolStripMenuItem.Click += new System.EventHandler(this.出入操作ToolStripMenuItem_Click);
             // 
             // 出库信息ToolStripMenuItem
             // 
             this.出库信息ToolStripMenuItem.Name = "出库信息ToolStripMenuItem";
-            this.出库信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.出库信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.出库信息ToolStripMenuItem.Text = "出库信息";
             this.出库信息ToolStripMenuItem.Click += new System.EventHandler(this.出库信息ToolStripMenuItem_Click);
             // 
             // 仓库信息管理ToolStripMenuItem1
             // 
             this.仓库信息管理ToolStripMenuItem1.Name = "仓库信息管理ToolStripMenuItem1";
-            this.仓库信息管理ToolStripMenuItem1.Size = new System.Drawing.Size(174, 26);
+            this.仓库信息管理ToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
             this.仓库信息管理ToolStripMenuItem1.Text = "仓库信息管理";
             this.仓库信息管理ToolStripMenuItem1.Click += new System.EventHandler(this.仓库信息管理ToolStripMenuItem1_Click);
             // 
             // 仓库信息查询ToolStripMenuItem
             // 
             this.仓库信息查询ToolStripMenuItem.Name = "仓库信息查询ToolStripMenuItem";
-            this.仓库信息查询ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.仓库信息查询ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.仓库信息查询ToolStripMenuItem.Text = "仓库信息查询";
             this.仓库信息查询ToolStripMenuItem.Click += new System.EventHandler(this.仓库信息查询ToolStripMenuItem_Click);
             // 
@@ -499,7 +499,7 @@
             this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Controls.Add(this.button11);
             this.panel4.Controls.Add(this.label16);
-            this.panel4.Location = new System.Drawing.Point(0, 3);
+            this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(918, 676);
             this.panel4.TabIndex = 17;
@@ -1676,9 +1676,9 @@
             this.label16.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label16.Location = new System.Drawing.Point(361, 50);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(183, 36);
+            this.label16.Size = new System.Drawing.Size(211, 36);
             this.label16.TabIndex = 0;
-            this.label16.Text = "查询客户信息";
+            this.label16.Text = "查询供应商信息";
             // 
             // button9
             // 
@@ -1693,7 +1693,7 @@
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(322, 216);
+            this.textBox10.Location = new System.Drawing.Point(338, 217);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(173, 25);
             this.textBox10.TabIndex = 3;
@@ -1704,9 +1704,9 @@
             this.label14.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label14.Location = new System.Drawing.Point(206, 216);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(112, 27);
+            this.label14.Size = new System.Drawing.Size(132, 27);
             this.label14.TabIndex = 1;
-            this.label14.Text = "客户编号：";
+            this.label14.Text = "供应商编号：";
             // 
             // label13
             // 
@@ -1714,9 +1714,9 @@
             this.label13.Font = new System.Drawing.Font("微软雅黑", 16F);
             this.label13.Location = new System.Drawing.Point(316, 100);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(177, 35);
+            this.label13.Size = new System.Drawing.Size(204, 35);
             this.label13.TabIndex = 0;
-            this.label13.Text = "删除客户信息";
+            this.label13.Text = "删除供应商信息";
             // 
             // textBox25
             // 
@@ -1737,7 +1737,7 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(582, 302);
+            this.textBox8.Location = new System.Drawing.Point(583, 297);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(158, 25);
             this.textBox8.TabIndex = 20;
@@ -1746,7 +1746,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label36.Location = new System.Drawing.Point(462, 300);
+            this.label36.Location = new System.Drawing.Point(467, 297);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(112, 27);
             this.label36.TabIndex = 19;
@@ -1768,14 +1768,14 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(262, 297);
+            this.textBox9.Location = new System.Drawing.Point(268, 297);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(158, 25);
             this.textBox9.TabIndex = 12;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(261, 222);
+            this.textBox7.Location = new System.Drawing.Point(268, 222);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(158, 25);
             this.textBox7.TabIndex = 10;
@@ -1815,7 +1815,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(258, 152);
+            this.textBox6.Location = new System.Drawing.Point(268, 154);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(158, 25);
             this.textBox6.TabIndex = 6;
@@ -1847,9 +1847,9 @@
             this.label11.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label11.Location = new System.Drawing.Point(464, 222);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(112, 27);
+            this.label11.Size = new System.Drawing.Size(132, 27);
             this.label11.TabIndex = 3;
-            this.label11.Text = "客户类型：";
+            this.label11.Text = "供应商类型：";
             // 
             // label10
             // 
@@ -1857,9 +1857,9 @@
             this.label10.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label10.Location = new System.Drawing.Point(143, 222);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(116, 27);
+            this.label10.Size = new System.Drawing.Size(112, 27);
             this.label10.TabIndex = 2;
-            this.label10.Text = "客  户  名：";
+            this.label10.Text = "供应商名：";
             // 
             // label9
             // 
@@ -1867,9 +1867,9 @@
             this.label9.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.label9.Location = new System.Drawing.Point(140, 152);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(112, 27);
+            this.label9.Size = new System.Drawing.Size(132, 27);
             this.label9.TabIndex = 1;
-            this.label9.Text = "客户编号：";
+            this.label9.Text = "供应商编号：";
             // 
             // label8
             // 
@@ -1877,9 +1877,9 @@
             this.label8.Font = new System.Drawing.Font("微软雅黑", 16F);
             this.label8.Location = new System.Drawing.Point(305, 66);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(177, 35);
+            this.label8.Size = new System.Drawing.Size(204, 35);
             this.label8.TabIndex = 0;
-            this.label8.Text = "修改客户信息";
+            this.label8.Text = "修改供应商信息";
             // 
             // comboBox1
             // 
@@ -1889,7 +1889,7 @@
             "食品商",
             "电子商",
             "图书商"});
-            this.comboBox1.Location = new System.Drawing.Point(590, 221);
+            this.comboBox1.Location = new System.Drawing.Point(603, 223);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 23);
             this.comboBox1.TabIndex = 17;
@@ -1897,35 +1897,35 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(270, 357);
+            this.textBox5.Location = new System.Drawing.Point(288, 357);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(325, 25);
             this.textBox5.TabIndex = 10;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(590, 286);
+            this.textBox4.Location = new System.Drawing.Point(603, 286);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(220, 25);
             this.textBox4.TabIndex = 9;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(270, 286);
+            this.textBox3.Location = new System.Drawing.Point(288, 286);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(175, 25);
             this.textBox3.TabIndex = 8;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(270, 221);
+            this.textBox2.Location = new System.Drawing.Point(288, 221);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(175, 25);
             this.textBox2.TabIndex = 7;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(265, 142);
+            this.textBox1.Location = new System.Drawing.Point(288, 144);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(175, 25);
             this.textBox1.TabIndex = 6;
@@ -1966,9 +1966,9 @@
             this.label3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.Location = new System.Drawing.Point(162, 219);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 27);
+            this.label3.Size = new System.Drawing.Size(112, 27);
             this.label3.TabIndex = 2;
-            this.label3.Text = "客  户  名：";
+            this.label3.Text = "供应商名：";
             // 
             // label2
             // 
@@ -1976,9 +1976,9 @@
             this.label2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.Location = new System.Drawing.Point(483, 219);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 27);
+            this.label2.Size = new System.Drawing.Size(132, 27);
             this.label2.TabIndex = 1;
-            this.label2.Text = "客户类型：";
+            this.label2.Text = "供应商类型：";
             // 
             // label1
             // 
@@ -1986,9 +1986,9 @@
             this.label1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(162, 142);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 27);
+            this.label1.Size = new System.Drawing.Size(132, 27);
             this.label1.TabIndex = 0;
-            this.label1.Text = "客户编号：";
+            this.label1.Text = "供应商编号：";
             // 
             // label7
             // 
@@ -1996,9 +1996,9 @@
             this.label7.Font = new System.Drawing.Font("微软雅黑", 16F);
             this.label7.Location = new System.Drawing.Point(341, 69);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(123, 35);
+            this.label7.Size = new System.Drawing.Size(204, 35);
             this.label7.TabIndex = 16;
-            this.label7.Text = "添加客户";
+            this.label7.Text = "添加供应商信息";
             // 
             // button2
             // 

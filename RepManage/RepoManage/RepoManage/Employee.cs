@@ -71,7 +71,7 @@ namespace RepoManage
                 cmd.Connection = conn;
                 cmd.CommandText = sqlStr;
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("客户添加成功！");
+                MessageBox.Show("供应商添加成功！");
             }
             catch (Exception)
             {
@@ -194,7 +194,7 @@ namespace RepoManage
                 }
                 else
                 {
-                    MessageBox.Show("输入的客户编号有误！");
+                    MessageBox.Show("输入的供应商编号有误！");
                 }
             }
             catch (Exception)
@@ -236,7 +236,7 @@ namespace RepoManage
                 cmd.Connection = conn;
                 cmd.CommandText = sqlStr;
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("信息修改成功！");
+                MessageBox.Show("供应商信息修改成功！");
             }
             catch (Exception)
             {
@@ -265,7 +265,7 @@ namespace RepoManage
                     string sqlStr1 = "delete from consumer where ConID='" + textBox10.Text.Trim() + "'";
                     cmd.CommandText = sqlStr1;
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("删除成功！");
+                    MessageBox.Show("供应商删除成功！");
                 }
                 else
                 {
